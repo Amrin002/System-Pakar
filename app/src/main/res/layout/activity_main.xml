@@ -6,6 +6,133 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sistem Pakar Tentang Penyakit Pencernaan Berdasarkan Gejala Makan"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="10dp"/>
 
+    <TextView
+        android:id="@+id/body1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="Pilih Gejala yang Anda Rasakan:"/>
+
+    <CheckBox
+        android:id="@+id/perutKembungCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Perut Kembung"
+        android:layout_below="@id/body1"
+
+        android:layout_marginLeft="10dp"/>
+
+    <CheckBox
+        android:id="@+id/mualCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mual"
+        android:layout_below="@id/perutKembungCheckBox"
+        android:layout_marginLeft="10dp"/>
+
+    <CheckBox
+        android:id="@+id/diareCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Diare"
+        android:layout_below="@id/mualCheckBox"
+
+        android:layout_marginLeft="10dp"/>
+
+    <CheckBox
+        android:id="@+id/muntahCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Muntah"
+        android:layout_below="@id/diareCheckBox"
+
+        android:layout_marginLeft="10dp"/>
+
+    <CheckBox
+        android:id="@+id/nyeriPerutCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nyeri Perut"
+        android:layout_below="@id/muntahCheckBox"
+
+        android:layout_marginLeft="10dp"/>
+
+    <CheckBox
+        android:id="@+id/kembungCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kembung"
+        android:layout_below="@id/nyeriPerutCheckBox"
+
+        android:layout_marginLeft="10dp"/>
+
+    <CheckBox
+        android:id="@+id/bersendawaCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sering Bersendawa"
+        android:layout_below="@id/kembungCheckBox"
+
+        android:layout_marginLeft="10dp"/>
+
+    <CheckBox
+        android:id="@+id/merasaLaparCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sering Merasa Lapar"
+        android:layout_below="@id/bersendawaCheckBox"
+
+        android:layout_marginLeft="10dp"/>
+
+    <CheckBox
+        android:id="@+id/nafsuMakanCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kehilangan Nafsu Makan"
+        android:layout_below="@id/merasaLaparCheckBox"
+
+        android:layout_marginLeft="10dp"/>
+
+    <CheckBox
+        android:id="@+id/buangGasCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sering Buang Gas"
+        android:layout_below="@id/nafsuMakanCheckBox"
+
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:id="@+id/btnDiagnosa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Diagnosa"
+        android:layout_below="@id/buangGasCheckBox"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/txtHasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnDiagnosa"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="Hasil Diagnosa"
+        android:textAlignment="center"
+        android:textSize="14sp"/>
 
 </RelativeLayout>
